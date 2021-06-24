@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context="com.dicoding.capstone.watchlist.ui.WatchlistActivity"
+    tools:ignore="Overdraw"
+    tools:keep="@layout/activity_watchlist">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/btn_back"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="57dp"
+        android:fontFamily="@font/encodesans_medium"
+        android:gravity="center_vertical"
+        android:paddingBottom="1dp"
+        android:text="@string/watchlist"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintEnd_toEndOf="@+id/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_movies"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:indeterminateTint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_movies" />
+
+    <include
+        android:id="@+id/view_empty"
+        layout="@layout/view_empty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

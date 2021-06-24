@@ -1,0 +1,21 @@
+<resources>
+    <style name="Theme.Capstone" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorPrimaryVariant">@color/dark_gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/dark_gray</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.Capstone.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Capstone.TransparentStatusBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

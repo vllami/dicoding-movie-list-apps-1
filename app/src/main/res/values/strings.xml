@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movee</string>
+    <string name="title_watchlist">Watchlist</string>
+    <string name="release_date">Release Date</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="error">There is something wrong!</string>
+</resources>
